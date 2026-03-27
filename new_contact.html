@@ -7,26 +7,56 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <h2>EMS</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="new-contact.html">New Contact</a></li>
-        <li><a href="view-contacts.html">View Contacts</a></li>
-    </ul>
-</nav>
+<div class="layout">
 
-<!-- Form Section -->
-<div class="container">
-    <h2>Add New Employee</h2>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="images/profile.png" alt="User">
+            <h3>Joshua Mutai</h3>
+            <p>Online</p>
+        </div>
 
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Full Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="phone" placeholder="Phone Number" required>
-        <button type="submit">Save Contact</button>
-    </form>
+        <ul class="menu">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="new_contact.html">➕ Add New Contact</a></li>
+            <li><a href="view_contacts.html">📋 View All Contacts</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="form-card">
+            <h2>Add New Contact</h2>
+
+            <form id="contactForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="+254..." required>
+
+                <label>Department</label>
+                <input type="text" id="department" placeholder="Enter department">
+
+                <label>Position</label>
+                <select id="position">
+                    <option value="">Select Position</option>
+                    <option>Manager</option>
+                    <option>Developer</option>
+                    <option>HR</option>
+                </select>
+
+                <button type="submit">Save Contact</button>
+
+            </form>
+        </div>
+    </div>
+
 </div>
 
 <script src="main.js"></script>

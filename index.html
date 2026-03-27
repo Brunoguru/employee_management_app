@@ -2,26 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Employee Management System</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <h2>EMS</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="new-contact.html">New Contact</a></li>
-            <li><a href="view-contacts.html">View Contacts</a></li>
-        </ul>
-    </nav>
+<div class="layout">
 
-    <!-- Main Content -->
-    <div class="container">
-        <h1>Employee Management System</h1>
-        <p>Welcome to the Employee Management System. You can add and view employee contacts easily.</p>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="images/profile.png" alt="User">
+            <h3>Kipkorir gideon</h3>
+            <p>Online</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="new_contact.html">➕ Add New Contact</a></li>
+            <li><a href="view_contacts.html">📋 View All Contacts</a></li>
+        </ul>
     </div>
 
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+            <div class="card blue">
+                <h2>5</h2>
+                <p>No. of Positions</p>
+            </div>
+
+            <div class="card green">
+                <h2 id="totalContacts">0</h2>
+                <p>No. of Contacts</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>

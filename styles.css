@@ -1,29 +1,153 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Navigation */
-nav {
-    background-color: #333;
-    color: white;
-    padding: 15px;
+/* Layout */
+.layout {
     display: flex;
-    justify-content: space-between;
 }
 
-nav ul {
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profile p {
+    color: lightgreen;
+}
+
+/* Menu */
+.menu {
     list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background-color: #1e293b;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f1f5f9;
+}
+
+/* Cards */
+.cards {
     display: flex;
     gap: 20px;
 }
 
-nav ul li a {
+.card {
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-    text-decoration: none;
+    width: 200px;
 }
 
-/* Main Content */
-.container {
-    padding: 20px;
+.card.blue {
+    background-color: #06b6d4;
+}
+
+.card.green {
+    background-color: #22c55e;
+}
+
+/* Form */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Delete button */
+td button {
+    background-color: red;
+}
+
+/* Search */
+#searchInput {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+td button {
+    margin-right: 5px;
 }

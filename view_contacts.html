@@ -7,32 +7,39 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <h2>EMS</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="new-contact.html">New Contact</a></li>
-        <li><a href="view-contacts.html">View Contacts</a></li>
-    </ul>
-</nav>
+<div class="layout">
 
-<!-- Table Section -->
-<div class="container">
-    <h2>All Employees</h2>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="images/profile.png" alt="User">
+            <h3>Joshua Mutai</h3>
+            <p>Online</p>
+        </div>
 
-    <table id="contactsTable">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Data will appear here -->
-        </tbody>
-    </table>
+        <ul class="menu">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="new_contact.html">➕ Add New Contact</a></li>
+            <li><a href="view_contacts.html">📋 View All Contacts</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>All Employees</h2>
+
+        <table id="contactsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
 </div>
 
 <script src="main.js"></script>
